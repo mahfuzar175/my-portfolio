@@ -13,7 +13,7 @@ const Banner = () => {
       };
 
   return (
-    <div>
+    <div className="lg:mt-8">
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="w-1/2 flex justify-center items-center">
