@@ -4,8 +4,8 @@ const Projects = () => {
       <h2 className="text-center font-extrabold text-4xl underline mb-4">Projects</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* project 1 */}
-        <div className="flex flex-col h-full">
-          <div className="card bg-base-100 shadow-xl flex-grow">
+        <div data-aos="zoom-in-right" data-aos-duration="1000" className="flex  flex-col h-full">
+          <div  className="card bg-base-100 shadow-xl flex-grow">
             <figure>
               <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
@@ -118,7 +118,7 @@ const Projects = () => {
         </div>
 
         {/* project 2 */}
-        <div className="flex flex-col h-full">
+        <div data-aos="zoom-in-left" data-aos-duration="1000" className="flex  flex-col h-full">
           <div className="card bg-base-100 shadow-xl flex-grow">
             <figure>
               <div className="carousel w-full">

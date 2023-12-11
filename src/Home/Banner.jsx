@@ -1,26 +1,31 @@
 import { MdOutlineFileDownload } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
-import owner from '../assets/owner.png'
+import owner from "../assets/owner.png";
+import { BsFacebook } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+import { SiHackerrank } from "react-icons/si";
+import { GrInstagram } from "react-icons/gr";
+import { Link} from "react-router-dom";
+
 const Banner = () => {
-    const handleDownload = () => {
-        const downloadLink = document.createElement("a");
-        downloadLink.href = "https://drive.google.com/uc?export=download&id=1NU9ANYmVAWg4nUHSHeYhMXRUrHXT4rQs";
-        downloadLink.target = "_blank";
-        downloadLink.download = "Assignment-02.pdf";
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
-      };
+  const handleDownload = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href =
+      "https://drive.google.com/uc?export=download&id=1NU9ANYmVAWg4nUHSHeYhMXRUrHXT4rQs";
+    downloadLink.target = "_blank";
+    downloadLink.download = "Assignment-02.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
 
   return (
     <div className="lg:mt-8">
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="w-1/2 flex justify-center items-center">
-            <img
-              src={owner}
-              className="max-w-lg lg:max-w-7xl"
-            />
+            <img src={owner} className="max-w-lg lg:max-w-7xl" />
           </div>
           <div className="w-1/2">
             <h1 className="text-5xl font-bold">
@@ -37,15 +42,71 @@ const Banner = () => {
               heights.
             </p>
             <div className="flex gap-4">
+              <Link to='/contact'>
               <button className="btn btn-secondary px-6">
                 Hire me
                 <IoIosArrowForward className="text-xl font-extrabold" />
               </button>
-              <button onClick={handleDownload} className="btn btn-secondary px-3">
-              
+              </Link>
+              <button
+                onClick={handleDownload}
+                className="btn btn-secondary px-3"
+              >
                 Get Resume
                 <MdOutlineFileDownload className="text-xl font-extrabold" />
               </button>
+            </div>
+            <div className="flex mt-4 ustify-center items-center lg:justify-start">
+              <a
+                href="https://www.facebook.com/mahfuzar.rahman.tarek/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700  mr-4 hover:text-blue-900"
+              >
+                <div className="w-10 h-full flex items-center justify-center">
+                  <BsFacebook size={24} />
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/md-mahfuzar-rahman-tarek/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700  mr-4 hover:text-blue-900"
+              >
+                <div className="w-10 h-full flex items-center justify-center">
+                  <BsLinkedin size={24} />
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/mahfuzarrahmantarek/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-orange-600  mr-4 hover:text-orange-900"
+              >
+                <div className="w-10 h-full flex items-center justify-center">
+                  <GrInstagram size={24} />
+                </div>
+              </a>
+              <a
+                href="https://github.com/mahfuzar175"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-700 mr-4 hover:text-green-900"
+              >
+                <div className="w-10 h-full flex items-center justify-center">
+                  <BsGithub size={24} />
+                </div>
+              </a>
+              <a
+                href="https://www.hackerrank.com/profile/mahfuzar175"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-700  mr-4 hover:text-black"
+              >
+                <div className="w-10 h-full flex items-center justify-center">
+                  <SiHackerrank size={24} />
+                </div>
+              </a>
             </div>
           </div>
         </div>
