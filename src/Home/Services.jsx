@@ -6,11 +6,11 @@ const Services = () => {
     <div className="mb-16 mt-8">
       <div className="text-center mb-4">
         <h3 className="text-red-500">SERVICES I OFFER</h3>
-        <h2 className="font-extrabold text-3xl">What Can I Do</h2>
+        <h2 className="font-extrabold text-2xl md:text-3xl">What Can I Do</h2>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center p-6">
         <div className="flex gap-16 flex-col lg:flex-row">
-          <div data-aos="fade-up" className="card card-compact w-96 bg-base-100 shadow-xl">
+          <div data-aos="fade-up" className="card card-compact md:w-96 bg-base-100 shadow-xl">
             <figure>
               <img
                 src={front_end}
@@ -22,7 +22,7 @@ const Services = () => {
               <p className='text-base'>Build client-side applications using React, Tailwind CSS/Bootstrap, and Firebase. Can make single page application using React Router.</p>
             </div>
           </div>
-          <div data-aos="fade-up" className="card card-compact w-96 bg-base-100 shadow-xl">
+          <div data-aos="fade-up" className="card card-compact md:w-96 bg-base-100 shadow-xl">
             <figure>
               <img
                 src={back_end}

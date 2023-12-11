@@ -76,7 +76,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost normal-case text-xl">
-            <h1 className="text-3xl">𝕿𝕬𝕽𝕰𝕶</h1>
+            <h1 className="text-2xl md:text-3xl">𝕿𝕬𝕽𝕰𝕶</h1>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -85,7 +85,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to='/contact'><button className="btn btn-outline border-none bg-pink-700 hover:bg-pink-600 text-white normal-case">Hire me</button></Link>
+          <Link to='/contact'><button className="btn btn-outline btn-secondary normal-case">Hire me</button></Link>
         
         </div>
       </div>
