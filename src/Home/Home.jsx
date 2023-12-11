@@ -22,7 +22,7 @@ const Home = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          fpsLimit: 400,
+          fpsLimit: 200,
           interactivity: {
             events: {
               onClick: {
@@ -53,7 +53,7 @@ const Home = () => {
               color: "#0d47a1",
               distance: 150,
               enable: true,
-              opacity: 1,
+              opacity: 0.5,
               width: 1,
             },
             move: {
@@ -63,7 +63,7 @@ const Home = () => {
                 default: "bounce",
               },
               random: false,
-              speed: 2,
+              speed: 3,
               straight: false,
             },
             number: {
@@ -71,7 +71,7 @@ const Home = () => {
                 enable: true,
                 area: 700,
               },
-              value: 12,
+              value: 20,
             },
             opacity: {
               value: 0.5,
