@@ -7,6 +7,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { SiHackerrank } from "react-icons/si";
 import { GrInstagram } from "react-icons/gr";
 import { Link} from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 const Banner = () => {
   const handleDownload = () => {
@@ -25,14 +26,21 @@ const Banner = () => {
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="w-1/2 flex justify-center items-center">
-            <img src={owner} className="max-w-lg lg:max-w-7xl" />
+            <img src={owner} className="max-w-sm lg:max-w-7xl" />
           </div>
           <div className="w-1/2">
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-3xl md:text-5xl font-bold">
               MD MAHFUZAR RAHMAN <span className="text-pink-500">TAREK</span>
             </h1>
-            <h1 className="py-2 text-2xl font-bold">
-              Junior Front-End Web Developer
+            <h1 className="py-2 text-xl md:text-3xl font-bold">
+            <Typewriter
+                options={{
+                  strings: ["Junior Front-End Web Developer"],
+                  autoStart: true,
+                  loop: true,
+                  delay: 100,
+                }}
+              />
             </h1>
             <p className="py-4">
               I am a dedicated fourth-year computer science student at Varendra
@@ -41,9 +49,9 @@ const Banner = () => {
               as a web developer, where I can apply and elevate my skills to new
               heights.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
               <Link to='/contact'>
-              <button className="btn btn-secondary px-6">
+              <button className="btn btn-secondary px-3">
                 Hire me
                 <IoIosArrowForward className="text-xl font-extrabold" />
               </button>

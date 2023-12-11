@@ -1,6 +1,24 @@
+import  { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   
     const navItems = (
       <>
@@ -25,7 +43,11 @@ const Navbar = () => {
       </>
     );
     return (
-      <div className="navbar p-4 dark:bg-gray-800 dark:text-gray-100">
+      <div
+      className={`navbar p-4 dark:bg-gray-800 dark:text-gray-100 ${
+        isScrolled ? "fixed top-0 w-full bg-white shadow z-10" : ""
+      }`}
+    >
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

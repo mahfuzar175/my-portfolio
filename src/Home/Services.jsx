@@ -3,7 +3,7 @@ import back_end from '../assets/back-end.jpg'
 
 const Services = () => {
   return (
-    <div className="mb-8">
+    <div className="mb-16 mt-8">
       <div className="text-center mb-4">
         <h3 className="text-red-500">SERVICES I OFFER</h3>
         <h2 className="font-extrabold text-3xl">What Can I Do</h2>
