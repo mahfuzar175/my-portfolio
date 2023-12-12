@@ -1,5 +1,8 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { GrInstagram } from 'react-icons/gr';
+import { SiHackerrank } from 'react-icons/si';
 
 const Contact = () => {
 
@@ -42,6 +45,58 @@ const Contact = () => {
 					</svg>
 					<span>mahfuzar175@gmail.com</span>
 				</p>
+				<div className="flex mt-4 ustify-center items-center lg:justify-start">
+              <a
+                href="https://www.facebook.com/mahfuzar.rahman.tarek/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700  mr-4 hover:text-blue-900"
+              >
+                <div className="w-8 h-full flex items-center justify-center">
+                  <BsFacebook size={24} />
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/md-mahfuzar-rahman-tarek/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700  mr-4 hover:text-blue-900"
+              >
+                <div className="w-8 h-full flex items-center justify-center">
+                  <BsLinkedin size={24} />
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/mahfuzarrahmantarek/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-orange-600  mr-4 hover:text-orange-900"
+              >
+                <div className="w-8 h-full flex items-center justify-center">
+                  <GrInstagram size={24} />
+                </div>
+              </a>
+              <a
+                href="https://github.com/mahfuzar175"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-700 mr-4 hover:text-green-900"
+              >
+                <div className="w-8 h-full flex items-center justify-center">
+                  <BsGithub size={24} />
+                </div>
+              </a>
+              <a
+                href="https://www.hackerrank.com/profile/mahfuzar175"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-700  mr-4 hover:text-black"
+              >
+                <div className="w-8 h-full flex items-center justify-center">
+                  <SiHackerrank size={24} />
+                </div>
+              </a>
+            </div>
 			</div>
 		</div>
 		<form  ref={form} onSubmit={sendEmail} className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">

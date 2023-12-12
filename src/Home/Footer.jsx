@@ -19,7 +19,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-blue-700  mr-4 hover:text-blue-900"
               >
-                <div className="w-10 h-full flex items-center justify-center">
+                <div className="w-8 h-full flex items-center justify-center">
                   <BsFacebook size={24} />
                 </div>
               </a>
@@ -29,7 +29,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-blue-700  mr-4 hover:text-blue-900"
               >
-                <div className="w-10 h-full flex items-center justify-center">
+                <div className="w-8 h-full flex items-center justify-center">
                   <BsLinkedin size={24} />
                 </div>
               </a>
@@ -39,7 +39,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-orange-600  mr-4 hover:text-orange-900"
               >
-                <div className="w-10 h-full flex items-center justify-center">
+                <div className="w-8 h-full flex items-center justify-center">
                   <GrInstagram size={24} />
                 </div>
               </a>
@@ -49,7 +49,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-green-700 mr-4 hover:text-green-900"
               >
-                <div className="w-10 h-full flex items-center justify-center">
+                <div className="w-8 h-full flex items-center justify-center">
                   <BsGithub size={24} />
                 </div>
               </a>
@@ -57,9 +57,9 @@ const Footer = () => {
                 href="https://www.hackerrank.com/profile/mahfuzar175"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-700  mr-4 hover:text-black"
+                className="text-green-700  mr-4 hover:text-red-800"
               >
-                <div className="w-10 h-full flex items-center justify-center">
+                <div className="w-8 h-full flex items-center justify-center">
                   <SiHackerrank size={24} />
                 </div>
               </a>
