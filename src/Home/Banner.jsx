@@ -1,6 +1,6 @@
 import { MdOutlineFileDownload } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
-import owner from "../assets/owner.png";
+import owner from "../assets/Tarek.png";
 import { BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
@@ -22,17 +22,17 @@ const Banner = () => {
   };
 
   return (
-    <div className="lg:mt-8">
+    <div>
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="w-1/2 flex justify-center items-center">
-            <img src={owner} className="max-w-xs md:max-w-md  lg:max-w-7xl" />
+            <img src={owner} className="max-w-full rounded-full shadow-xl" />
           </div>
           <div className="w-1/2">
-            <h1 className="text-xl md:text-5xl font-bold">
+            <h1 className="text-2xl md:text-5xl font-bold">
               MD MAHFUZAR RAHMAN <span className="text-pink-500">TAREK</span>
             </h1>
-            <h1 className="py-2 text-lg md:text-3xl font-bold">
+            <h1 className="py-2 text-xl md:text-3xl font-bold">
             <Typewriter
                 options={{
                   strings: ["Junior Front-End Web Developer"],
@@ -71,7 +71,7 @@ const Banner = () => {
                 rel="noopener noreferrer"
                 className="text-blue-700  mr-4 hover:text-blue-900"
               >
-                <div className="w-6 md:w-10 h-full flex items-center justify-center">
+                <div className="w-6 md:w-9 h-full flex items-center justify-center">
                   <BsFacebook size={24} />
                 </div>
               </a>
@@ -81,7 +81,7 @@ const Banner = () => {
                 rel="noopener noreferrer"
                 className="text-blue-700  mr-4 hover:text-blue-900"
               >
-                <div className="w-6 md:w-10 h-full flex items-center justify-center">
+                <div className="w-6 md:w-9 h-full flex items-center justify-center">
                   <BsLinkedin size={24} />
                 </div>
               </a>
@@ -91,7 +91,7 @@ const Banner = () => {
                 rel="noopener noreferrer"
                 className="text-orange-600  mr-4 hover:text-orange-900"
               >
-                <div className="w-6 md:w-10 h-full flex items-center justify-center">
+                <div className="w-6 md:w-9 h-full flex items-center justify-center">
                   <GrInstagram size={24} />
                 </div>
               </a>
@@ -101,7 +101,7 @@ const Banner = () => {
                 rel="noopener noreferrer"
                 className="text-green-700 mr-4 hover:text-green-900"
               >
-                <div className="w-6 md:w-10 h-full flex items-center justify-center">
+                <div className="w-6 md:w-9 h-full flex items-center justify-center">
                   <BsGithub size={24} />
                 </div>
               </a>
@@ -111,7 +111,7 @@ const Banner = () => {
                 rel="noopener noreferrer"
                 className="text-green-700  mr-4 hover:text-black"
               >
-                <div className="w-6 md:w-10 h-full flex items-center justify-center">
+                <div className="w-6 md:w-9 h-full flex items-center justify-center">
                   <SiHackerrank size={24} />
                 </div>
               </a>
